@@ -1,0 +1,173 @@
+/* Base Application Styles */
+body {
+  color: #fff;
+  background: #222;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+.todoapp {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 500px;
+  text-align: center;
+}
+
+.inputgroup {
+  width: 450px;
+  padding-left: 50px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.toggleall {
+  position: absolute;
+  left: 0;
+  top: -51px;
+}
+
+.toggleall, .toggle {
+  float: left;
+  width: 50px;
+  height: 50px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.newtodo {
+  float: left;
+  box-sizing: border-box;
+  width: 450px;
+  height: 50px;
+  border: none;
+  padding-left: 20px;
+  outline: none;
+}
+.newtodo:focus {
+  outline: 1px solid green;
+}
+
+
+.main {
+  position: relative;
+  border-top: 1px solid #333;
+}
+
+.todo-list {
+  background-color: #fff;
+}
+
+
+.view {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  color: #999;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.toggle:after, .toggleall:after {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  color: #aaa;
+  text-align: center;
+  content: "\f058";
+  cursor: pointer;
+}
+.toggle:checked:after, .toggleall:checked:after {
+  color: green;
+}
+.toggle:checked + label {
+  text-decoration: line-through;
+  color: green;
+}
+.view label {
+  display: block;
+  float: left;
+  width: 400px;
+  height: auto;
+  line-height: 50px;
+
+  word-break: break-all;
+}
+
+.destory {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  outline: none;
+  color: #333;
+}
+.destory i{
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.destory i:hover{
+  transform:rotate(90deg);
+}
+
+.view:hover .destory {
+  display: block;
+}
+
+
+.control-bar {
+  padding: 4px 15px;
+  font-size: 14px;
+  line-height: 22px;
+  overflow: hidden;
+  background-color: #fff;
+  color: #999;
+}
+
+.item-num {
+  float: left;
+  width: 100px;
+}
+
+.select-way {
+  float: left;
+  margin-left: 35px;
+}
+.select-way li {
+  float: left;
+}
+
+.select-way a {
+  box-sizing: border-box;
+  color: #999;
+  text-decoration: none;
+  display: block;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.select-way a.selected {
+  line-height: 20px;
+  border: 1px solid rgba(175, 47, 47, 0.2);
+  border-radius: 3px;
+}
+
+.clearCount {
+  float: right;
+}
+.clearCount a {
+  color: #999;
+  text-decoration: none;
+}
